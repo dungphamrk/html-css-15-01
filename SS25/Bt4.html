@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt4</title>
+    </head>
+    <body>
+        <script>
+        let n=+prompt("Nhap so nguyen duong n");
+        let arr=new [];
+        let sum=0;
+        arr[1]=1;
+        if (isNaN(n)) {
+            console.log("INVALID"); 
+        } else{
+        for (let i = 2; i < n; i++) {
+            arr[i]=arr[i-1]*i;
+            sum+=arr[i]
+        }
+        console.log("Tong cua cac so do la",arr[i]);
+    }
+    </script>
+    </body>
+</html>

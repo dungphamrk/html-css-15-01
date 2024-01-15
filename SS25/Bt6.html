@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt6</title>
+</head>
+<body>
+    <script>
+        let F=[];
+        F[0]=0;
+        F[1]=1;
+        for (let i = 2; i < 92; i++) {
+            F[i]=F[i-1]+F[i-2];
+        }
+    
+        let n=+prompt("Nhap so can tinh");  
+        if (isNaN(n)) {
+            console.log("INVALID");
+        }else   console.log(F[n]);
+       
+        
+    </script>
+</body>
+</html>

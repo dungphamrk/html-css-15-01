@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt7</title>
+</head>
+<body>
+    <script>
+        let prime=[];
+        for (let i = 2; i < 10000000; i++) {
+            prime[i]=1;
+        }
+        prime[0]=prime[1]=0;
+        for (let i = 2; i < 1000; i++) {
+             for (let j = i*i; j < 1000; j+=i) {
+                prime[j]=0;
+             } 
+        }
+        let n=+prompt("Nhap so n");
+        if (isNaN(n)) {
+            console.log("INVALID");
+        }else{
+            if (prime[n]) {
+                console.log("la so nguyen to");
+            }
+            else console.log("ko la so nguyen to");
+        }
+    </script>
+</body>
+</html>

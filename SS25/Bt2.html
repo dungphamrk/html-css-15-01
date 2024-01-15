@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt2</title>
+    </head>
+    <body>
+        <script>
+        let a=+prompt("Nhap so a");
+        let b=+prompt("Nhap so b");
+        let tongChan=0;let tongLe=0;
+        if (isNaN(a)||isNaN(b)) {
+            console.log("INVALID");
+        }else{
+        for (let i = a; i <=b; i++) {
+            if (i%2==0) {
+                tongChan+=i;
+            }
+            else tongLe+=i;
+        }
+        console.log("Tong cac so le giua hai so do la: ",tongLe );
+        console.log("Tong cac so chan giua hai so do la: ",tongChan );
+    }
+    </script>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt10</title>
+</head>
+<body>
+    <script>
+        let n=+prompt("Nhap so nguyen duong bat ky");
+        for (let i = n; i > 0 ; i--) {
+            for (let j = i; j > 0; j--) {
+                 document.write("*");
+            }
+            document.write('<br>');
+        }
+        document.write('<br>');
+        for (let i = 1; i <=n ; i++) {
+            for (let j = i; j >=0 ; j--) {
+                document.write('&ensp;');
+            }
+            for (let j = n-i; j>=0; j--) {
+                document.write("*");
+            }
+            document.write('<br>');
+          
+        }
+    </script>
+</body>
+</html>

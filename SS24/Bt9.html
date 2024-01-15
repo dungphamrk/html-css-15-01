@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt9</title>
+</head>
+<body>
+    <script>
+        function ucln(a,b) {
+            while (a!=b) {
+                if (a>b) {
+                    a=a-b;
+                }else b=b-a;
+            }
+            return a;
+        }
+      
+        let a=+prompt("Nhap so a");
+        let b=+prompt("Nhap so b");
+        let c=+prompt("Nhap so c");
+        let d=+prompt("Nhap so d");
+        console.log("ucln cua cac so do la",ucln(ucln(a,b),ucln(c,d)));
+    </script>
+</body>
+</html>

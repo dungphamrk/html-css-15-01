@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bt3</title>
+    </head>
+    <body>
+        <script>
+        let n=+prompt("Nhap so nguyen duong n");
+        let sum=0;
+        if (isNaN(n)) {
+            console.log("INVALID");
+        }else{
+        for (let i = 1; i < n; i++) {
+           sum+=i;
+           if (sum>n) {
+            console.log("so can tim la",i-1);
+            break;
+           }
+        }
+    }
+    </script>
+    </body>
+</html>

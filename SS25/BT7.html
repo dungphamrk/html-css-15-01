@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bt7</title>
+</head>
+<body>
+    <script>
+        function ucln(a,b) {
+            while (a!=b) {
+                if (a>b) {
+                    a=a-b;
+                }else b=b-a;
+            }
+            return a;
+        }
+        function bcnn(a,b)  {
+            return a*b/ucln(a,b);
+        }
+        let a=+prompt("Nhap so a");
+        let b=+prompt("Nhap so b");
+        let c=+prompt("Nhap so c");
+        let d=+prompt("Nhap so d");
+        console.log("BCNN cua cac so do la",bcnn(bcnn(a,b),bcnn(c,d)));
+    </script>
+</body>
+</html>
